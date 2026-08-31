@@ -49,14 +49,17 @@
        </main>
 </body>
 <script>
-   const botao = document.querySelectorAll("button");
-   botao.addEventListener("click", botaoClicado);
+   const botoes = document.querySelectorAll("button");
+   botoes.forEach( function(botao){
+       botao.addEventListener("click", botaoClicado);
+       function botaoClicado(){
+        console.log("fui criado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+       }
+     })
 
-   function botaoClicado(){
-    console.log("fui criado");
-    let texto = botao.querySelector("span");
-    texto.textContent++;
-   }
+   
 
 
 </script>
