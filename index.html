@@ -56,7 +56,7 @@
                </div>
                 <img src="img.png" alt="imagem de um pikachu centralizado em pixels com uma pokebola ao lado">
                <div>
-                   <h2>meu primeiro post</h2>
+                   <h2>meu segundo post</h2>
                    <P class="artigo-autor">por: Karine Campos</P>
                    <p>bem vindo ao meu blog! vou compartilhar conhecimentos de pokemon.</p>
                       <button>🐲 <span>0</span></button>
@@ -67,11 +67,15 @@
 <script>
    const botoes = document.querySelectorAll("button");
    botoes.forEach( function(botao){
+    let curtiu = false;
        botao.addEventListener("click", botaoClicado);
        function botaoClicado(){
         console.log("fui criado");
         let texto = botao.querySelector("span");
-        texto.textContent++;
+        if (curtiu === false) {
+            texto.textContent++;
+            curtiu = true
+        }
        }
      })
 
