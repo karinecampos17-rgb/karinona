@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>blog</title> 
-
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header> 
@@ -36,26 +36,5 @@
           </main>
         </article>
 </body>
-<script>
-   const botoes = document.querySelectorAll("button");
-   botoes.forEach( function(botao){
-    let curtiu = false;
-       botao.addEventListener("click", botaoClicado);
-       function botaoClicado(){
-        console.log("fui criado");
-        let texto = botao.querySelector("span");
-        if (curtiu === false) {
-            texto.textContent++;
-            curtiu = true
-        } else{
-            texto.textContent--;
-            curtiu = false;
-        }
-       }
-     })
 
-   
-
-
-</script>
 </html>
