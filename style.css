@@ -3,25 +3,26 @@
   }
   
   header{
-    background-color: #191a70;
- color: #f5f11d;
+  background-color: #191a70;
+  color: #f5f11d;
   text-align: center;
-      margin: 0 auto;
- padding: 16px;
+  margin: 0 auto;
+  padding: 16px;
   border: 5px solid
   #0D2248;
      }
  main{
-   color: #191a70;
+  color: #191a70;
   margin: 0 auto;
-   padding: 16px;
+  padding: 16px;
+  display: flex;
   }
     article{
     display: flex;
     }
  img{
-       width: 80px;
-     height: 80px;
+  width: 80px;
+  height: 80px;
   }
 .artigo-autor{
   font-weight: bold;
