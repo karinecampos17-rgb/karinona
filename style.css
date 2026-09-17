@@ -19,6 +19,7 @@
   }
     article{
     display: flex;
+    border: 1px solid #0D2248;
     }
  img{
   width: 80px;
